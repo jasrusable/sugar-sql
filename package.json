@@ -1,0 +1,47 @@
+{
+  "name": "sugar-sql",
+  "version": "0.0.1",
+  "description": "sugar-sql",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsc",
+    "test": "jest --runInBand --forceExit ./src",
+    "test:watch": "jest --runInBand --watch ./src",
+    "lint": "eslint ./src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasrusable/sugar-sql.git"
+  },
+  "author": "Jason Russell",
+  "license": "MIT",
+  "keywords": [
+    "sugar-sql",
+    "sql",
+    "postgres"
+  ],
+  "bugs": {
+    "url": "https://github.com/jasrusable/sugar-sql/issues"
+  },
+  "homepage": "https://github.com/jasrusable/sugar-sql#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "jest": "^27.0.1",
+    "np": "^7.2.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^27.0.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
